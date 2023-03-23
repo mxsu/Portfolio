@@ -1,0 +1,8 @@
+#color-palette-layout{
+    display: flex;
+    flex-wrap: wrap;
+    width:min-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+

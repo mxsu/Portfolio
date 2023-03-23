@@ -1,0 +1,198 @@
+/* Colors */
+
+:root {
+    --color-primary: #CCAE88;
+    --color-secondary: #6F4E37;
+    --color-third: #B9FBC0;
+    --color-light: #FDFFF5;
+    --color-dark: #121212;
+}
+
+.colors {
+    display: flex;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    margin: 0.25rem;
+    padding: 0 1rem;
+    text-align: center;
+    align-items: center;
+    line-height: normal;
+    font-weight: 700;
+}
+
+#color-primary {
+    background-color: var(--color-primary);
+}
+
+#color-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+#color-third {
+    background-color: var(--color-third);
+}
+
+#color-light {
+    background-color: var(--color-light);
+    border: var(--color-dark) 1px solid;
+}
+
+#color-dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+section {}
+
+#style-guide {
+    margin: 2rem;
+}
+
+/* Text */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-container {
+    width: 60%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Bulleted Lists 
+    https://web.dev/css-marker-pseudo-element/
+    dl: description list
+    dt: description term
+    dd: description describe
+    */
+dt {
+    font-weight: 700;
+}
+
+dd {
+    display: list-item;
+    list-style-type: "➜";
+    padding-inline-start: 1ch;
+}
+
+/* Numbered list
+https://blog.logrocket.com/styling-numbered-lists-with-css-counters/
+*/
+div.numbered-list {
+    counter-reset: list-number;
+}
+
+div.numbered-list div:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-darkgrey);
+}
+
+/* Button */
+.button {
+    border: none;
+    display: inline-block;
+    padding: 0.5rem;
+    color: #2d2d2d;
+    background-color: var(--color-primary);
+    text-decoration: none;
+    border-radius: .8em;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.button:hover,
+.button:focus {
+    color: #2d2d2d;
+    background-color: var(--color-third);
+}
+
+/* Text Input */
+input {
+    padding: 0.5em;
+    margin: .3em;
+    display: inline-block;
+    border-radius: 0.8em;
+    border: 2px solid #2d2d2d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    border: 2px solid var(--color-secondary);
+}
+
+/* Navigation Bar 
+https://www.w3schools.com/howto/howto_js_topnav.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
+*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
+}
+
+.topnav a:hover {
+    background-color: var(--color-light);
+    color: black;
+    border-bottom: 4px solid var(--color-secondary);
+}
+
+.topnav a.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-bottom: 4px solid red;
+}
+
+/* In-text Link */
+
+
+/* Submit/Reset Buttons */
+
+/* Text Input Field */
+
+/* Combined Elements Section */
+
+/* Main Navigation */
+
+/* Bio */
