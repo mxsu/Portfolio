@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>P03</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/grids.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/grids.css" rel="stylesheet" />
 
     <!-- Imported fonts 
     Open Sans
     Montserrat -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Navigation part -->
     <section>
-        <div class="topnav">
-            <a href="../HTML/home.html">Home</a>
-            <a href="../HTML/project-1.html">Projects</a>
-            <a href="../HTML/contact.html">Contact</a>
-        </div>
+      <div class="topnav">
+        <a href="../HTML/home.html">Home</a>
+        <a href="../HTML/project-1.html">Projects</a>
+        <a href="../HTML/contact.html">Contact</a>
+      </div>
     </section>
 
     <section>
-        <h1>P03 - Style Guide</h1>
-        <div class="topnav nav-style-guide">
-            <a href="#interactive_elements">Interactive Elements</a>
-            <a href="#text_elements">Text Elements</a>
-            <a href="#combined_elements">Combined Elements</a>
-        </div>
+      <div class="banner">
+        <h2>P03 Style Guide</h2>
+      </div>
+      <div class="topnav nav-style-guide">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+      </div>
     </section>
     <div class="project-layout">
-    <!-- Color Palette -->
-    <section id="color-palette">
+      <!-- Color Palette -->
+      <section id="color-palette">
+        <h2>Color Palette</h2>
         <section>
-            <div id="color-palette-layout">
-                <!-- Milk Tea -->
+          <div class="flex-layout">
+            <div class="split-layout">
+              <div id="color-palette-layout">
                 <div class="colors" id="color-primary">#bf838d</div>
-                <!-- Brown Sugar -->
+
                 <div class="colors" id="color-secondary">#958694</div>
-                <!--  -->
-                <!-- <div class="colors" id="color-third">x</div> -->
-                <!-- Milk -->
+
                 <div class="colors" id="color-light">#f1e6e4</div>
-                <!-- Pearls -->
+
                 <div class="colors" id="color-dark">#403744</div>
+              </div>
             </div>
+          </div>
         </section>
-    </section>
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-    <section>
-        <h2>Fonts</h2>
-        <h3>Open Sans</h3>
-                <p class="open-sans">Open sans is used for headers and titles</p>
-                <h3 class="montserrat">Montserrat</h3>
-                <p>Montserrat is used for text and buttons</p>
-    </section>
-        <section>
-            <h2>Headings</h2>
+      </section>
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <div class="banner">
+          <h2>Text Elements</h2>
+        </div>
+        <div class="flex-layout">
+          <section class="split-layout">
+            <h3>Open Sans</h3>
+            <p class="open-sans">Open sans is used for headers and titles</p>
+            <h3 class="montserrat">Montserrat</h3>
+            <p>Montserrat is used for text and buttons</p>
+          </section>
+          <section class="split-layout">
             <h1>Header 1</h1>
             <h2>Header 2</h2>
             <h3>Header 3</h3>
             <h4>Header 4</h4>
             <h5>Header 5</h5>
             <h6>Header 6</h6>
-
-        </section>
-
+          </section>
+        </div>
         <section>
-            <h2>Paragraphs</h2>
-            <div class="p-container">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
+          <h2>Paragraphs</h2>
+          <div class="p-container">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
         </section>
 
         <!-- 
@@ -98,110 +101,103 @@
             dt: description term
             dd: description describe
          -->
-        <section>
+        <div class="flex-layout">
+          <section class="split-layout">
             <h2>Bulleted Lists</h2>
             <dl>
-                <dt>Title</dt>
-                <dd>Hello!</dd>
-                <dd>Testing</dd>
-                <dd>1234</dd>
+              <dt>Title</dt>
+              <dd>Hello!</dd>
+              <dd>Testing</dd>
+              <dd>1234</dd>
             </dl>
-        </section>
+          </section>
 
-        <section>
+          <section class="split-layout">
             <h2>Numbered Lists</h2>
             <div class="numbered-list">
-                <div>x</div>
-                <div>y</div>
-                <div>z</div>
+              <div>x</div>
+              <div>y</div>
+              <div>z</div>
             </div>
-        </section>
+          </section>
+        </div>
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
         <h2>Interactive Elements</h2>
 
         <!-- Default Button styling section -->
         <section>
+          <h2>Button</h2>
 
-            <h2>Navigation Button</h2>
-
-            <h3>CSS selector:</h3>
-            <p>.button-nav</p>
-
-            <h3>Sample code:</h3>
-            <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <a class="button" href="#">Default Button</a>
-
+          <h3>Rendered element:</h3>
+          <a class="button" href="#">Default Button</a>
         </section>
 
         <section>
-            <h2>In-text link</h2>
+          <h2>In-text link</h2>
         </section>
 
         <section>
-            <h2>Submit/Reset Buttons</h2>
-            <form>
-                Search:
-                <input type="search">
-                <br>
-                <br>
-                <input class="button" id="submit" type="submit">
-                <input class="button" id="reset" type="reset">
-            </form>
+          <h2>Submit/Reset Buttons</h2>
+          <form>
+            Search:
+            <input type="search" />
+            <br />
+            <br />
+            <input class="button" id="submit" type="submit" />
+            <input class="button" id="reset" type="reset" />
+          </form>
         </section>
 
         <section>
-            <h2>Text Input Field</h2>
-            <form>
-                <label for="input"> Search: </label>
-                <input type="text" class="input">
-            </form>
+          <h2>Text Input Field</h2>
+          <form>
+            <label for="input"> Search: </label>
+            <input type="text" class="input" />
+          </form>
         </section>
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
         <h2>Combined Elements</h2>
-
         <section>
-            <h2>Main Navigation</h2>
-            <div class="topnav nav-style-guide">
-                <a href="#interactive_elements">Home</a>
-                <a href="#text_elements">Projects</a>
-                <a href="#combined_elements">Contact</a>
-                </nav>
+          <h2>Main Navigation</h2>
+          <div class="topnav nav-style-guide">
+            <a href="../HTML/home.html">Home</a>
+            <a href="../HTML/project-1.html">Projects</a>
+            <a href="../HTML/contact.html">Contact</a>
+          </div>
         </section>
 
         <section>
-            <h2>Portfolio Layout</h2>
-            <p class="p-container">
-                Hey, my name is Michael, but some of my friends call me mellow. I'm a 3rd-year student at Simon Fraser
-                University majoring in the Interactive Arts and Technology program. My main passions are in game design,
-                such as things like 3D modeling, programming, and User Experience design. The design skills I have
-                acquired over the years are in prototyping and UX/UI. My software toolkit consists of collaborative
-                design tools like Figma, and 3D modeling software such as OnShape, Rhinoceros3D, and Maya. I have coding
-                proficiency in languages such as Java, Processing, and Arduino.
-            </p>
+          <h2>Portfolio Layout</h2>
+          <p class="p-container">
+            Hey, my name is Michael, but some of my friends call me mellow. I'm
+            a 3rd-year student at Simon Fraser University majoring in the
+            Interactive Arts and Technology program. My main passions are in
+            game design, such as things like 3D modeling, programming, and User
+            Experience design. The design skills I have acquired over the years
+            are in prototyping and UX/UI. My software toolkit consists of
+            collaborative design tools like Figma, and 3D modeling software such
+            as OnShape, Rhinoceros3D, and Maya. I have coding proficiency in
+            languages such as Java, Processing, and Arduino.
+          </p>
         </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-</div>
-<footer>
-    <div class="footer-layout"></div>
-    <div class="footer-content"></div>
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
     </div>
-    <h4>By Michael Su <br> 2023</h4>
-    
-  </footer>
-</body>
-
+    <footer>
+      <div class="footer-layout"></div>
+      <div class="footer-content"></div>
+      <h4>
+        By Michael Su <br />
+        2023
+      </h4>
+    </footer>
+  </body>
 </html>

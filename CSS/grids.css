@@ -1,8 +1,18 @@
-#color-palette-layout{
-    display: flex;
-    flex-wrap: wrap;
-    width:min-content;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+#color-palette-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.split-layout {
+  flex-basis: 45%;
+  flex-grow: 1;
+  margin: 0 0.5rem 0 0.5rem;
+}

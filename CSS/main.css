@@ -22,12 +22,11 @@
 
 #color-primary {
   background-color: var(--color-primary);
-
 }
 
 #color-secondary {
   background-color: var(--color-secondary);
-
+  color: var(--color-light);
 }
 
 #color-third {
@@ -46,6 +45,10 @@
 
 .project-layout {
   margin: 2rem;
+}
+
+body {
+  background-color: var(--color-light);
 }
 
 /* Text */
@@ -117,11 +120,11 @@ div.numbered-list div:before {
   border: none;
   display: inline-block;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  color: #2d2d2d;
-  background-color: var(--color-secondary);
+  color: white;
+  background-color: var(--color-primary);
   text-decoration: none;
   border-radius: 1em;
-  font-weight: bold;
+
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -129,7 +132,7 @@ div.numbered-list div:before {
 .button:hover,
 .button:focus {
   color: #2d2d2d;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 /* Text Input */
@@ -138,7 +141,7 @@ input {
   margin: 0.3em;
   display: inline-block;
   border-radius: 1em;
-  border: 2px solid #2d2d2d;
+  border: 2px solid var(--color-dark);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
@@ -146,7 +149,7 @@ input {
 }
 
 input:focus {
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-primary);
 }
 
 /* Navigation Bar 
@@ -157,7 +160,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
 .topnav {
   overflow: hidden;
   background-color: var(--color-dark);
-  margin: 0 0 2rem 0;
+  margin: 0 0 0 0;
 }
 
 .nav-style-guide {
@@ -193,13 +196,63 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
 /* Text Input Field */
 
 /* Combined Elements Section */
-/* Footer */
-footer{
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    text-align: center;
-    padding: 1rem;
-  }
+
+/* Image container 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Fill_a_box_with_an_image
+*/
+
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+}
+
 /* Main Navigation */
 
+/* Banner */
+.banner {
+  padding: 0.5rem;
+  margin: 0 0 0 0rem;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.banner .nunito {
+  opacity: 0.8;
+}
+
+/* Contact Page */
+
+.contact-us {
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--color-secondary);
+  border-radius: 0.7rem;
+  margin: 1rem;
+  height: fit-content;
+}
+
+/* message input boxes */
+.contact-us #contact-message,
+#review {
+  font-family: "Nunito", sans-serif;
+  padding: 0.5em;
+  margin: 0.3em;
+  display: inline-block;
+  border-radius: 0.8em;
+  border: 2px solid var(--color-dark);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  margin-bottom: 0.5rem;
+  width: 85%;
+}
+/* Footer */
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1rem;
+}
 /* Bio */
