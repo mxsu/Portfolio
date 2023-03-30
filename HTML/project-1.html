@@ -17,16 +17,32 @@
   </head>
 
   <body>
+    <!-- Nav bar -->
     <section>
       <div class="topnav">
-        <a href="../HTML/home.html">Home</a>
-        <a href="../HTML/project-1.html">Projects</a>
-        <a href="../HTML/contact.html">Contact</a>
-      </div>
-      <div class="banner">
-        <h1>Music Recital Hall Pavilion in the Park</h1>
+        <a class="nav-btn" href="../HTML/home.html">Home</a>
+        <div class="topnav-right">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Projects
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../HTML/project-1.html">3D Modelling</a>
+              <a href="../HTML/project-2.html">UX/UI Design</a>
+              <a href="../HTML/home.html#home-projects">View projects</a>
+            </div>
+          </div>
+          <!-- end of drop down -->
+          <a class="nav-btn" href="../HTML/contact.html">Contact</a>
+        </div>
       </div>
     </section>
+    <!-- End of nav bar -->
+    <div class="banner">
+      <h1>Music Recital Hall:</h1>
+      <h1>Pavilion in the Park</h1>
+    </div>
     <div class="project-layout">
       <section>
         <iframe

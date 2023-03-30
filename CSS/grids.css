@@ -11,8 +11,12 @@
   flex-wrap: wrap;
 }
 
-.split-layout {
-  flex-basis: 45%;
+.split-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.split-child {
   flex-grow: 1;
-  margin: 0 0.5rem 0 0.5rem;
 }

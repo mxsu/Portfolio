@@ -69,6 +69,15 @@ h6,
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  font-size: 48px;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
 .p-container {
   width: 60%;
   padding: 1rem;
@@ -131,7 +140,6 @@ div.numbered-list div:before {
 
 .button:hover,
 .button:focus {
-  color: #2d2d2d;
   background-color: var(--color-secondary);
 }
 
@@ -160,7 +168,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
 .topnav {
   overflow: hidden;
   background-color: var(--color-dark);
-  margin: 0 0 0 0;
 }
 
 .nav-style-guide {
@@ -169,26 +176,109 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--color-light);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   border-bottom: 4px solid transparent;
 }
 
 .topnav a:hover {
-  background-color: var(--color-light);
+  background-color: var(--color-secondary);
   color: black;
   border-bottom: 4px solid var(--color-primary);
+  transition: background-color 0.5s ease;
+  transition: border-bottom 0.5s ease;
 }
 
 .topnav a.active {
-  background-color: var(--color-primary);
-  color: white;
-  border-bottom: 4px solid var(--color-dark);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-bottom: 4px solid var(--color-primary);
+}
+/* Centering Home button
+https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.topnav-right {
+  float: right;
+}
+/* mobile */
+/* @media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+} */
+/* Top nav drop down */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: var(--color-light);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  position: relative;
+  height: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  border-bottom: 4px solid var(--color-primary);
+  transition: background-color 0.5s ease;
+  transition: border-bottom 0.1s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 7;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-light);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of drop down */
 /* In-text Link */
 
 /* Submit/Reset Buttons */
@@ -216,10 +306,6 @@ img {
   background-color: var(--color-secondary);
   color: var(--color-dark);
   text-align: center;
-}
-
-.banner .nunito {
-  opacity: 0.8;
 }
 
 /* Contact Page */
@@ -255,4 +341,29 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
 /* Bio */
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid var(--color-secondary);
+}
+
+.profile-picture img {
+  width: 250px;
+  height: 250px;
+  transform: scale(2.5) translate(-20%, 27%);
+}
+@media screen and (max-width: 768px) {
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+  }
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+    transform: scale(2.7) translate(-20%, 27%);
+  }
+}
