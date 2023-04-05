@@ -20,3 +20,50 @@
 .split-child {
   flex-grow: 1;
 }
+
+.flex-pcontainers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-pitems {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+.project-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 0 0 0 10%; */
+  /* width: 80%; */
+}
+
+.info-items {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.info-timeline,
+.info-team {
+  flex: 25%;
+}
+
+.info-overview,
+.info-role {
+  flex: 74%;
+}
+
+.info-skills {
+  flex: 50%;
+  padding-right: 10%;
+}
+
+.info-tools {
+  float: right;
+  flex: 50%;
+}
+
+.project-info h2 {
+  margin: auto;
+}
