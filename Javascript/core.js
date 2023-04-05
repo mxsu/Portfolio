@@ -10,4 +10,18 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+// TOP NAV SCROLLING UP MAKES IT REAPPEAR
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector("nav").classList.add("show");
+  } else {
+    document.querySelector("nav").classList.remove("show");
+  }
+
+  prevScrollPos = currentScrollPos;
+};
 // END OF TOP NAV

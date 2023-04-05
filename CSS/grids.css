@@ -39,9 +39,32 @@
   /* width: 80%; */
 }
 
+.showcase {
+  display: block;
+  width: 1080px;
+  margin: 0 auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .showcase {
+    width: 100%;
+  }
+}
+
+.project-highlight {
+  background-color: var(--color-light);
+  margin-left: -33.3%;
+  margin-right: -33.3%;
+  padding-left: 33.3%;
+  padding-right: 33.3%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
 .info-items {
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .info-timeline,
@@ -64,6 +87,43 @@
   flex: 50%;
 }
 
-.project-info h2 {
-  margin: auto;
+/* Heading and Paragraph flex*/
+
+.process-flex {
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 0 0 0 10%; */
+  /* width: 80%; */
+}
+
+/* The heading will go from left to top and then less margin when resizing*/
+@media screen and (max-width: 1080px) {
+  .process-flex {
+    display: flex;
+  }
+  .process-flex h2 {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  .process-flex p {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+}
+
+/* Heading to the left */
+.process-flex h2 {
+  float: left;
+  padding-top: 0;
+  margin-top: 2rem;
+  width: 25%;
+}
+
+/* paragraph on the right */
+
+.process-flex p {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
