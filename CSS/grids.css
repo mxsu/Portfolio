@@ -1,3 +1,4 @@
+/* Style guide color layout */
 #color-palette-layout {
   display: flex;
   flex-wrap: wrap;
@@ -5,13 +6,39 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
+/* margins */
+.project-layout {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 1600px) {
+  .project-layout {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* @media screen and (max-width: 1280px) {
+  .project-layout {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .project-layout {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 .flex-layout {
   display: flex;
   flex-wrap: wrap;
 }
 
-.split-container {
+/* .split-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,9 +46,9 @@
 
 .split-child {
   flex-grow: 1;
-}
+} */
 
-.flex-pcontainers {
+/* .flex-pcontainers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -30,7 +57,10 @@
 .flex-pitems {
   flex-grow: 1;
   flex-basis: auto;
-}
+} */
+
+/* Project info section */
+
 .project-info {
   display: flex;
   flex-direction: row;
@@ -39,6 +69,7 @@
   /* width: 80%; */
 }
 
+/* Image at the top of the project page */
 .showcase {
   display: block;
   width: 1080px;
@@ -52,6 +83,7 @@
   }
 }
 
+/* change section background color */
 .project-highlight {
   background-color: var(--color-light);
   margin-left: -33.3%;
@@ -62,21 +94,27 @@
   padding-top: 1rem;
 }
 
+/* Project info container */
+
 .info-items {
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
+
+/* project info timeline and team section */
 
 .info-timeline,
 .info-team {
   flex: 25%;
 }
 
+/* overview role */
 .info-overview,
 .info-role {
   flex: 74%;
 }
 
+/* Skills and toolkit */
 .info-skills {
   flex: 50%;
   padding-right: 10%;
@@ -97,6 +135,55 @@
   /* width: 80%; */
 }
 
+/* Heading to the left */
+.process-flex h2 {
+  float: left;
+  padding-top: 0;
+  margin-top: 2rem;
+  width: 25%;
+}
+
+@media screen and (max-width: 1080px) {
+  .process-flex h2 {
+    width: 100%;
+  }
+}
+
+/* paragraph on the right */
+
+.process-flex p {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+p.float-right {
+  float: right;
+  margin-right: 1rem;
+}
+
+/* image on the right */
+
+.process-flex img {
+  margin-left: calc(25% + 2rem);
+  width: 50%;
+}
+
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: calc(25% + 2rem); */
+  margin-bottom: 2rem;
+}
+.side-by-side img {
+  display: flex;
+  width: 45%;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
 /* The heading will go from left to top and then less margin when resizing*/
 @media screen and (max-width: 1080px) {
   .process-flex {
@@ -106,24 +193,43 @@
     margin-top: 1rem;
     margin-bottom: 0rem;
   }
+  /* paragraph centers */
   .process-flex p {
     margin-bottom: 1rem;
-    margin-top: 0rem;
+    margin-top: 0.5rem;
+    width: 90%;
   }
 }
 
-/* Heading to the left */
-.process-flex h2 {
-  float: left;
-  padding-top: 0;
-  margin-top: 2rem;
-  width: 25%;
+@media screen and (max-width: 1201px) {
+  .process-flex img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+  }
+  /* move paragraph to the left after resizing */
+  p.float-right {
+    float: none;
+    margin-right: 1rem;
+  }
 }
 
-/* paragraph on the right */
+@media screen and (max-width: 768px) {
+  .process-flex img {
+    width: 80%;
+  }
+}
 
-.process-flex p {
-  overflow: hidden;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+/* ABOUT ME */
+
+.about-me {
+  display: flex;
+}
+
+.about-me-bio {
+  flex: 2;
+}
+
+.about-me-text {
+  flex: 3;
 }

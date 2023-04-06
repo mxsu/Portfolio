@@ -23,6 +23,7 @@
       <div class="topnav">
         <a class="nav-btn" href="../HTML/home.html">Home</a>
         <div class="topnav-right">
+          <a class="nav-btn" href="../HTML/about.html">About</a>
           <div class="dropdown">
             <button class="dropbtn">
               Projects
@@ -41,145 +42,149 @@
     </section>
     <!-- End of nav bar -->
     <div class="banner">
-      <h1>Microsite Design:</h1>
-      <h1>Playland</h1>
+      <h1>Mobile App Development:</h1>
+      <h1>JotDown</h1>
     </div>
-    <img class="showcase" src="../Images/Playland.webp" />
+    <img class="showcase" src="../Images/playland/Playland.webp" />
     <div class="project-layout">
       <section>
         <div class="project-info">
           <div class="info-items info-timeline">
             <h2>Timeline</h2>
-            <p class="p-container">May 2022 - Aug 2022</p>
+            <p class="p-container">Sept 2022 - Dec 2022</p>
           </div>
           <div class="info-items info-overview">
             <h2>Overview</h2>
             <p class="p-container">
-              For this school project, our team designed a webpage for Playland
-              targeted towards parents of kids and their common worries during a
-              family trip at an amusement park.
+              For this school project, our team designed a journal entry mobile
+              app that uses camera, SQLite databases, and uses hardware sensors.
             </p>
           </div>
           <div class="info-items info-team">
             <h2>Team</h2>
-            <p class="p-container">
-              Alan Lam, Alan Huang, Michael Su, Sapol Pittayakornpisuth
-            </p>
+            <p class="p-container">Stephen Kerschbaumer, Michael Su</p>
           </div>
           <div class="info-items info-role">
             <h2>My Role</h2>
             <p class="p-container">
-              I was the project coordinator that handled duties such as
-              scheduling, organizing roles, and utilization of collaboration
-              tools.
+              One of the co-creators of the app, I worked on the text entry,
+              photo entry, login screen, themes, and helped design the journal
+              entry page.
             </p>
           </div>
           <div class="info-items info-skills">
             <h2>Skills</h2>
-            <p class="p-container">
-              Sketching, Wireframing, User Persona/UI/UX, Mood boards, HTML/CSS
-            </p>
+            <p class="p-container">Sketching, Java, XML, SQLite</p>
           </div>
           <div class="info-items info-tools">
             <h2>Tools</h2>
-            <p class="p-container">Figma, Webflow, Visual Studio Code</p>
+            <p class="p-container">Android Studio</p>
           </div>
         </div>
       </section>
       <!-- end of details -->
       <section>
         <!-- <img src="../images/show-picture.png" /> -->
+
         <div class="project-highlight">
-          <h2>Objectives</h2>
+          <div class="process-flex">
+            <h2>Objectives</h2>
+            <p class="p-container">
+              Design a mobile app that has 4 activity pages, stores data using
+              shared preferences, and SQLite databases, functional with hardware
+              sensors, and uses either camera or GPS. With polished UI UX
+              experiences with graphics, menus, sound, persistence and
+              responsiveness.
+            </p>
+          </div>
+        </div>
+        <div class="process-flex">
+          <h2>Solution</h2>
           <p class="p-container">
-            Design a microsite targeted towards parents planning to take their
-            kids on a summer trip to Playland. Their main concerns are unknown
-            dangers of the amusement park, getting lost/losing their kids, ride
-            information and safety, spending budget, and weather concerns.
+            Our team decided to create a journal entry app with a text, photo,
+            mood, and gallery activity pages. Storing data entry information
+            with shared preferences and storing saved entries into an SQLite
+            database.
+          </p>
+        </div>
+        <div class="h-center">
+          <h1>The Design Process</h1>
+        </div>
+
+        <div class="process-flex">
+          <h2>Ideation: Sketching Layouts</h2>
+          <p class="p-container">
+            As a team, we each sketched out some quick layout ideas for our
+            project.
+          </p>
+          <img class="figure" src="../Images/playland/sketches.png" />
+        </div>
+
+        <div class="process-flex">
+          <h2>Testing + Iteration</h2>
+          <p class="p-container">
+            After testing and feedback from our classmates and TA, we found out
+            a problem with both our website and mobile design were too
+            condensed, without a lot of negative space. Our redesign took that
+            feedback and implemented a website with more negative space,
+            asymmetrical balance, and use of icons, graphics and textures to
+            balance out the negatives and guide viewers eyes towards the next
+            section.
+          </p>
+          <div class="side-by-side">
+            <img class="figure" src="../Images/playland/playland-layout.png" />
+            <img class="figure" src="../Images/playland/playland-layout2.png" />
+          </div>
+        </div>
+
+        <div class="project-highlight process-flex">
+          <h2>Biggest Challenge</h2>
+          <p class="p-container">
+            The biggest challenge I faced was inserting images into the SQL, I
+            completed the camera and gallery image entry pretty early, but I had
+            trouble sending the image to shared preferences and the SQL. First
+            we tried to convert the image from URI to bitmap to a byte array and
+            then save it to the SQL, but we figured out it was easier to save
+            the image to a file path or grab the file path and then save it as a
+            string into the SQL. Even after completing the saving file path to
+            SQL, we had trouble with displaying the image in our gallery card
+            view because we had a problem with accessing read permissions in our
+            app. We had enabled the camera permission, but we did not have the
+            file storage permission enabled. We didn't know that reading from
+            the file storage was different from reading from the camera storage,
+            which meant that the app could display camera photos but not the
+            photos from the phone gallery.
           </p>
         </div>
 
-        <h2>Solution</h2>
-        <p class="p-container">
-          Parental needs and concerns are addressed by the one-stop-shop
-          information provided on our microsite, which is aided by simplistic
-          yet visually appealing design. Content is arranged by order of
-          importance and icons are used to create visual support.
+        <div class="project-highlight process-flex">
+          <h2>Lessons Learnt</h2>
+          <p class="p-container">
+            One of the challenging things we have learned from this project was
+            how to work on offline projects together as with code it is hard to
+            work collaboratively in real time. We designated different features
+            to work on and then at the end of the week we combined the project
+            together creating an app that flowed together. From that we also
+            learned how to comment and explain code to each other as we built
+            our app because as the program got more complex the more messy the
+            code got. At the end of the project, we acquired great teamwork
+            skills, managing how to split work, and learned how to explain and
+            integrate our ideas.
+          </p>
+        </div>
 
-          <!-- <img src="../images/centric.webp" /> -->
-        </p>
-        <h1 class="project-highlight">The Design Process</h1>
-        <h2>Creating a User Persona for our target client</h2>
-        <p class="p-container">
-          We created a user persona to target a user group and address their
-          main worries, in our case it was a parent planning to bring their kids
-          on a summer trip to Playland.
-        </p>
-
-        <h2>Moodboards</h2>
-        <p class="p-container">
-          We created mood boards to find an art direction for our website, as
-          our group were split between two different styles: Simplistic & Modern
-          style where we had flat colors, sharp geometric shapes, big icons, and
-          clear grid designs.
-        </p>
-        <p class="p-container">
-          The other direction was a more Gradient & Dreamy approach where it was
-          more colorful, softer geometric shapes paired with sharp shapes to
-          break motion, and a more fluid design.
-        </p>
-
-        <h2>Sketching</h2>
-        <p class="p-container">
-          As a team, we each sketched out our ideas for for the website layout
-          before deciding on elements for our website.
-        </p>
-
-        <h2>Wireframing</h2>
-        <p class="p-container">
-          Our desktop wireframes were created based on a 6-grid layout and had
-          the necessary information condensed into one page.
-        </p>
-
-        <p class="p-container">
-          A problem we faced was that the mobile design was a lot harder to
-          layout as it was not as wide as a webpage. It created a design where
-          it was tightly packed together without much negative space in between
-          causing users to feel anxious.
-        </p>
-
-        <h2>Testing + Iteration</h2>
-        <p class="p-container">
-          After testing and feedback from our classmates and TA, we found out a
-          problem with both our website and mobile design were too condensed,
-          without a lot of negative space. Our redesign took that feedback and
-          implemented a website with more negative space, asymmetrical balance,
-          and use of icons, graphics and textures to balance out the negatives
-          and guide viewers eyes towards the next section.
-        </p>
-
-        <h2>Lessons Learnt</h2>
-        <p class="p-container">
-          After using Webflow to create our website and mobile designs, we ran
-          into a lot of problems with the application. The biggest problem is
-          that only one person can edit at a time, and that really brought down
-          the productivity of the team as one person held a lot of the burden.
-          We solved this problem by sharing the account and fixing things on our
-          own time, but the website was not as flushed out as we had hoped
-          because of time constraints and the learning curve of the software.
-          Another problem was that changing something on the mobile side also
-          changed the webpage side. This was a huge problem because we wanted to
-          have floating and resizable icons on the webpage, but the grid layout
-          of the icons are in different positions on the mobile page.
-        </p>
         <h2>Sources used</h2>
         <p class="p-container">
           Process Analysis Source 2:
           https://notmichaelsu.wixsite.com/michael-su/web-design
+          <br />
+          Image Sources:
+          https://www.figma.com/file/brdEBJGnCeZDBBEJuICwNP/IAT235?node-id=133%3A2&t=5pP17itaBBEQiDuv-1
         </p>
         <br />
       </section>
     </div>
+
     <footer>
       <div class="footer-layout"></div>
       <div class="footer-content"></div>
@@ -189,5 +194,6 @@
       </h4>
       <a class="button" href="../HTML/style-guide.html">Style Guide</a>
     </footer>
+    <script href="../Javascript/core.js"></script>
   </body>
 </html>

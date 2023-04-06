@@ -43,18 +43,6 @@
   color: var(--color-light);
 }
 
-.project-layout {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-@media only screen and (max-width: 768px) {
-  .project-layout {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
 body {
   /* background-color: var(--color-light); */
 }
@@ -188,9 +176,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
   overflow: hidden;
   background-color: var(--color-dark);
   /* position: fixed; */
-  width: 100%;
+  width: auto;
   /* top: -50px; */
   transition: top 0.3s;
+  padding-left: 20%;
 }
 
 .nav-style-guide {
@@ -239,15 +228,15 @@ https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
   float: right;
   padding-right: 20%;
 }
-/* mobile */
+/* mobile  */
 /* @media screen and (max-width: 600px) {
   .topnav a,
   .topnav-right {
     float: none;
     display: block;
   }
-
-  .topnav-centered a {
+} */
+/* .topnav-centered a {
     position: relative;
     top: 0;
     left: 0;
@@ -321,9 +310,9 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Fill_a_box_with_an_imag
 */
 
 img {
-  width: 500px;
+  /* width: 500px;
   height: 300px;
-  object-fit: contain;
+  object-fit: contain; */
 }
 
 /* Main Navigation */
@@ -371,31 +360,6 @@ footer {
   padding: 1rem;
 }
 
-/* Bio */
-.profile-picture {
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 10px solid var(--color-secondary);
-}
-
-.profile-picture img {
-  width: 250px;
-  height: 250px;
-  transform: scale(2.5) translate(-20%, 27%);
-}
-@media screen and (max-width: 768px) {
-  .profile-picture {
-    width: 200px;
-    height: 200px;
-  }
-  .profile-picture img {
-    width: 200px;
-    height: 200px;
-    transform: scale(2.7) translate(-20%, 27%);
-  }
-}
 /* PROJECT*/
 /* VIDEO PLAYER */
 .youtube {
@@ -416,4 +380,45 @@ footer {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.figure {
+  border: 0.8rem solid var(--color-secondary);
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+}
+/* smaller border for mobile devices */
+@media screen and (max-width: 1080px) {
+  .figure {
+    border: 0.4rem solid var(--color-secondary);
+  }
+}
+
+/* ABOUT PAGE */
+/* Bio */
+
+.profile-layout {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 300px;
+  height: auto;
+}
+.profile-frame {
+  height: 600px;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--color-dark);
 }
