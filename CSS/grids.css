@@ -88,6 +88,7 @@
   background-color: var(--color-light);
   margin-left: -33.3%;
   margin-right: -33.3%;
+  margin-top: 2rem;
   padding-left: 33.3%;
   padding-right: 33.3%;
   padding-bottom: 2rem;
@@ -173,15 +174,16 @@ p.float-right {
 .side-by-side {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: calc(25% + 2rem); */
+  margin-left: 25%;
   margin-bottom: 2rem;
 }
+
 .side-by-side img {
-  display: flex;
   width: 45%;
   margin-bottom: 1rem;
   margin-right: 0;
   margin-left: 1rem;
+  object-fit: cover;
 }
 
 /* The heading will go from left to top and then less margin when resizing*/
@@ -212,17 +214,24 @@ p.float-right {
     float: none;
     margin-right: 1rem;
   }
+  .side-by-side {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .process-flex img {
     width: 80%;
   }
+  .side-by-side img {
+    width: 60%;
+  }
 }
 
 /* ABOUT ME */
 
 .about-me {
+  margin-top: 2rem;
   display: flex;
 }
 

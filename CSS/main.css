@@ -226,7 +226,7 @@ https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
 
 .topnav-right {
   float: right;
-  padding-right: 20%;
+  padding-right: 25%;
 }
 /* mobile  */
 /* @media screen and (max-width: 600px) {
