@@ -244,6 +244,7 @@ p.float-right {
 .about-me {
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .about-me-bio {
