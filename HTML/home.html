@@ -19,7 +19,7 @@
     <!-- Nav bar -->
     <section>
       <div class="topnav">
-        <a class="nav-btn active" href="../HTML/home.html">Home</a>
+        <a class="nav-btn" href="../HTML/home.html">Home</a>
         <div class="topnav-right">
           <div class="dropdown">
             <button class="dropbtn">
@@ -27,41 +27,105 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="../HTML/project-1.html">3D Modelling</a>
-              <a href="../HTML/project-2.html">UX/UI Design</a>
+              <a href="../HTML/project-1.html">UX/UI Design</a>
+              <a href="../HTML/project-2.html">Mobile App Design</a>
               <a href="../HTML/home.html#home-projects">View projects</a>
             </div>
           </div>
           <!-- end of drop down -->
-          <a class="nav-btn" href="../HTML/contact.html">Contact</a>
+          <a
+            class="nav-btn"
+            href="https://drive.google.com/file/d/1Dw61f7S_u5fDNi3FxMzC79ttcOuW5Z4x/view?usp=share_link"
+            >Resume</a
+          >
         </div>
       </div>
     </section>
     <!-- End of nav bar -->
-
     <section class="project-layout">
-      <h2>BIO</h2>
-      <div class="split left">
-        <div class="profile-picture">
-          <img src="../Images/profile.jpg" alt="Picture of me" />
+      <div class="about-me">
+        <div class="about-me-bio">
+          <div class="profile-frame">
+            <div class="profile-picture">
+              <img src="../Images/about/profile.png" alt="Picture of me" />
+            </div>
+            <h1 class="bio bold">Michael Su</h1>
+            <h3 class="bio">UX UI Designer</h3>
+            <h3 class="bio">Simon Fraser University</h3>
+            <p class="p-container">msa232@sfu.ca</p>
+            <a href="https://github.com/mxsu">
+              <img
+                class="profile-links"
+                src="../Images/about/github-mark-white.png"
+                alt="Github"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/notmichaelsu/">
+              <img
+                class="profile-links"
+                src="../Images/about/linkedin-white.png"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="split right">
-        <h2>Hello~ I'm Mellow</h2>
-        <p class="p-container">
-          Hey, my name is Michael, but some of my friends call me mellow. I'm a
-          3rd-year student at Simon Fraser University majoring in the
-          Interactive Arts and Technology program. My main passions are in game
-          design, such as things like 3D modeling, programming, and User
-          Experience design. The design skills I have acquired over the years
-          are in prototyping and UX/UI. My software toolkit consists of
-          collaborative design tools like Figma, and 3D modeling software such
-          as OnShape, Rhinoceros3D, and Maya. I have coding proficiency in
-          languages such as Java, Processing, and Arduino.
-        </p>
+        <!--  -->
+        <div class="about-me-text">
+          <h1>Hello~ I'm Mellow</h1>
+          <p class="p-container"><h3>
+            Hello, I'm Michael Su. I'm a 3rd-year student at Simon Fraser
+            University majoring in the Interactive Arts and Technology program.
+          </h3>
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="home-projects"></section>
+    <section id="home-projects" class="project-layout">
+      <div class="project-home">
+        <h1>My Projects</h1>
+        <div class="gallery">
+          <!-- Project 1 -->
+
+          <div class="gallery-desc">
+            <h1>Microsite Design: Playland</h1>
+            <p class="p-container">
+              User Research, Sketching, Wireframing, UX/UI
+            </p>
+            <img class="gallery-image" src="../Images/playland/Playland.webp" />
+            <p class="p-container">
+              Redesigned a website directed to parents to improve navigation,
+              information flow, and mobile responsiveness.
+            </p>
+            <a class="button" href="../HTML/project-1.html">Read More</a>
+          </div>
+          <!-- Project 2 -->
+          <div class="gallery-desc">
+            <h1>Mobile App Dev: JotDown</h1>
+            <p class="p-container">Sketching, Coding, UX/UI</p>
+            <img
+              class="gallery-image"
+              src="../Images/jotDown/jot-activities.png"
+            />
+            <p class="p-container">
+              Created and designed an Android app with Java and XML that
+              accesses camera hardware and saves information to an SQLite
+              database
+            </p>
+            <a class="button" href="../HTML/project-2.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-layout"></div>
+      <div class="footer-content"></div>
+      <h4>
+        By Michael Su <br />
+        2023
+      </h4>
+      <a class="button" href="../HTML/style-guide.html">Style Guide</a>
+    </footer>
+    <script href="../Javascript/core.js"></script>
   </body>
 </html>

@@ -95,6 +95,17 @@
   padding-top: 1rem;
 }
 
+.project-home {
+  background-color: var(--color-primary);
+  margin-left: -33.3%;
+  margin-right: -33.3%;
+  margin-top: 2rem;
+  padding-left: 33.3%;
+  padding-right: 33.3%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
 /* Project info container */
 
 .info-items {
