@@ -19,8 +19,12 @@
     <!-- Nav bar -->
     <section>
       <div class="topnav">
-        <a class="nav-btn active" href="../html/home.html">Home</a>
+        <a class="nav-btn" href="../html/home.html">
+          <img class="logo" src="../Images/about/msu-logo.png" alt="LinkedIn"
+        /></a>
+
         <div class="topnav-right">
+          <a class="nav-btn active" href="../html/home.html">Home</a>
           <div class="dropdown">
             <button class="dropbtn">
               Projects
@@ -35,7 +39,8 @@
           <!-- end of drop down -->
           <a
             class="nav-btn"
-            target="_blank" href="https://drive.google.com/file/d/1Dw61f7S_u5fDNi3FxMzC79ttcOuW5Z4x/view?usp=share_link"
+            target="_blank"
+            href="https://drive.google.com/file/d/1Dw61f7S_u5fDNi3FxMzC79ttcOuW5Z4x/view?usp=share_link"
             >Resume</a
           >
         </div>
@@ -53,7 +58,14 @@
             <h3 class="bio">UX UI Designer</h3>
             <h3 class="bio">Simon Fraser University</h3>
             <p class="p-container">msa232@sfu.ca</p>
-            <a  target="_blank" href="https://github.com/mxsu">
+            <a href="mailto:msa232@sfu.ca">
+              <img
+                class="profile-links"
+                src="../Images/about/mail.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a target="_blank" href="https://github.com/mxsu">
               <img
                 class="profile-links"
                 src="../Images/about/github-mark-white.png"
@@ -71,19 +83,29 @@
         </div>
         <!--  -->
         <div class="about-me-text">
-          <h1>Nice to meet you~</h1>
-          <h1>I'm Michael Su</h1>
+          <h1 class="title">Nice to meet you~<br /><br />I'm Michael Su</h1>
           <p class="p-container">
-            Hey, I'm Michael Su, but some of my friends call me MSU from SFU. I am currently a 3rd-year student at Simon Fraser University, majoring in the Interactive Arts and Technology program. My current aspiration is mobile app development and design.
-          </h3>
+            Hey, my name is Michael, but some of my friends call me mellow. I’m
+            a 3rd-year student at Simon Fraser University majoring in the
+            Interactive Arts and Technology program. My main passions are in
+            game design, such as things like 3D modeling, programming, and User
+            Experience design. The design skills I have acquired over the years
+            are in prototyping and UX/UI. My software toolkit consists of
+            collaborative design tools like Figma, and 3D modeling software such
+            as OnShape, Rhinoceros3D, and Twinmotion. I have coding proficiency
+            in languages such as Java, Processing, and Arduino. (93 words)
           </p>
+          <a class="button" href="../html/style-guide.html">Learn more</a>
+          <a class="button" href="../html/home.html#home-projects"
+            >View Projects</a
+          >
         </div>
       </div>
     </section>
 
-      <div class="project-highlight color-primary" id="home-projects">
-        <section class="project-layout">
-        <h1>My Projects</h1>
+    <div class="project-highlight color-primary" id="home-projects">
+      <section class="project-layout">
+        <h1 class="title">My Projects</h1>
         <div class="gallery">
           <!-- Project 1 -->
 
@@ -92,7 +114,12 @@
             <p class="p-container">
               User Research, Sketching, Wireframing, UX/UI
             </p>
-            <img class="gallery-image" src="../Images/playland/Playland.webp" />
+            <a href="../html/project-2.html">
+              <img
+                class="gallery-image"
+                src="../Images/playland/Playland.webp"
+              />
+            </a>
             <p class="p-container">
               Redesigned a website directed to parents to improve navigation,
               information flow, and mobile responsiveness.
@@ -103,47 +130,55 @@
           <div class="gallery-desc">
             <h1>Mobile App Dev: JotDown</h1>
             <p class="p-container">Sketching, Coding, UX/UI</p>
-            <img
-              class="gallery-image"
-              src="../Images/jotDown/jot-activities.png"
-            />
+            <a href="../html/project-2.html">
+              <img
+                class="gallery-image"
+                src="../Images/jotDown/jot-activities.png"
+              />
+            </a>
             <p class="p-container">
               Created and designed an Android app with Java and XML that
               accesses camera hardware and saves information to an SQLite
               database
             </p>
+
             <a class="button" href="../html/project-2.html">Read More</a>
           </div>
-        </section>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 class="title">2023 Michael Su</h2>
+        </div>
+        <div class="footer-right">
+          <a class="footer-link button" href="../html/style-guide.html"
+            >Style Guide</a
+          >
+          <a href="mailto:msa232@sfu.ca">
+            <img class="profile-links" src="../Images/about/mail.png" alt="" />
+          </a>
+          <a target="_blank" href="https://github.com/mxsu">
+            <img
+              class="profile-links"
+              src="../Images/about/github-mark-white.png"
+              alt="Github"
+            />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/notmichaelsu/">
+            <img
+              class="profile-links"
+              src="../Images/about/linkedin-white.png"
+              alt="LinkedIn"
+            />
+          </a>
         </div>
       </div>
-      <!-- FOOTER -->
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
-            <h2>2023 Michael Su</h2>
-          </div>
-            <div class="footer-right">
-              <a target="_blank" href="https://github.com/mxsu">
-                <img
-                  class="profile-links"
-                  src="../Images/about/github-mark-white.png"
-                  alt="Github"
-                />
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/in/notmichaelsu/">
-                <img
-                  class="profile-links"
-                  src="../Images/about/linkedin-white.png"
-                  alt="LinkedIn"
-                />
-              </a>
-            
-          </div>
-          </div>
-
-      </footer>
-      <!-- END OF FOOTER -->
+    </footer>
+    <!-- END OF FOOTER -->
     <script href="../Javascript/core.js"></script>
   </body>
 </html>
