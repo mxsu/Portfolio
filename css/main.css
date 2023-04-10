@@ -442,6 +442,7 @@ footer {
   box-sizing: border-box;
   width: 300px;
   height: auto;
+  object-fit: cover;
   border-radius: 50%;
   border: 10px solid var(--color-dark);
   padding: 10px;
@@ -539,4 +540,8 @@ footer {
   margin-bottom: -0.5rem;
   padding: 0 1rem 0 1rem;
   transform: scale(1.5);
+}
+
+.msu {
+  width: 300px;
 }

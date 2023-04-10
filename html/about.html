@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>P03</title>
+    <title>Home</title>
     <meta charset="utf-8" />
 
     <link href="../css/normalize.css" rel="stylesheet" />
@@ -19,49 +19,123 @@
     <!-- Nav bar -->
     <section>
       <div class="topnav">
-        <a class="nav-btn" href="../HTML/home.html">Home</a>
+        <a class="nav-btn" href="../html/home.html">
+          <img class="logo" src="../images/about/msu-logo.png" alt="LinkedIn"
+        /></a>
+
         <div class="topnav-right">
+          <a class="nav-btn active" href="../html/home.html">Home</a>
           <div class="dropdown">
             <button class="dropbtn">
               Projects
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="../HTML/project-1.html">3D Modelling</a>
-              <a href="../HTML/project-2.html">UX/UI Design</a>
-              <a href="../HTML/home.html#home-projects">View projects</a>
+              <a href="../html/project-1.html">UX/UI Design</a>
+              <a href="../html/project-2.html">Mobile App Design</a>
+              <a href="../html/home.html#home-projects">View projects</a>
             </div>
           </div>
           <!-- end of drop down -->
-          <a class="nav-btn active" href="../HTML/about.html">About</a>
+          <a
+            class="nav-btn"
+            target="_blank"
+            href="https://drive.google.com/file/d/1Dw61f7S_u5fDNi3FxMzC79ttcOuW5Z4x/view?usp=share_link"
+            >Resume</a
+          >
         </div>
       </div>
     </section>
     <!-- End of nav bar -->
-
-    <div class="banner">
-      <h2>About Me/Contact</h2>
-    </div>
-    <section class="profile-layout">
+    <section class="project-layout">
       <div class="about-me">
         <div class="about-me-bio">
           <div class="profile-frame">
-            <div class="profile-picture">
-              <img src="../Images/about/profile.png" alt="Picture of me" />
-            </div>
+            <img
+              class="msu"
+              src="../images/about/msu.png"
+              alt="Picture of me"
+            />
+
+            <h1 class="bio bold">Michael Su</h1>
+            <h3 class="bio">UX UI Designer</h3>
+            <h3 class="bio">Simon Fraser University</h3>
+            <p class="p-container">msa232@sfu.ca</p>
+            <a href="mailto:msa232@sfu.ca">
+              <img
+                class="profile-links"
+                src="../images/about/mail.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a target="_blank" href="https://github.com/mxsu">
+              <img
+                class="profile-links"
+                src="../images/about/github-mark-white.png"
+                alt="Github"
+              />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/notmichaelsu/">
+              <img
+                class="profile-links"
+                src="../images/about/linkedin-white.png"
+                alt="LinkedIn"
+              />
+            </a>
           </div>
         </div>
         <!--  -->
         <div class="about-me-text">
-          <h2>Hello~ I'm Mellow</h2>
-          <p class="p-container">
-            Hello, I'm Michael Su. I'm a 3rd-year student at Simon Fraser
-            University majoring in the Interactive Arts and Technology program.
-          </p>
+          <h1 class="title">Little bit about me</h1>
+          <p class="p-container">6 yr old me got rizz</p>
+          <div class="project-info">
+            <dl class="info-items info-skills">
+              <dd>Rizzard of oz</dd>
+              <dd>Rizzler</dd>
+              <dd>University of Rizz</dd>
+            </dl>
+            <dl class="info-items info-tools">
+              <dd>Sexual Harizzment</dd>
+              <dd>The Rizzly Bear</dd>
+              <dd>Degree in Quantum Rizzics</dd>
+              <dd>Md Safwat Qurib Ifti</dd>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="home-projects"></section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 class="title">2023 Michael Su</h2>
+        </div>
+        <div class="footer-right">
+          <a class="footer-link button" href="../html/style-guide.html"
+            >Style Guide</a
+          >
+          <a href="mailto:msa232@sfu.ca">
+            <img class="profile-links" src="../images/about/mail.png" alt="" />
+          </a>
+          <a target="_blank" href="https://github.com/mxsu">
+            <img
+              class="profile-links"
+              src="../images/about/github-mark-white.png"
+              alt="Github"
+            />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/notmichaelsu/">
+            <img
+              class="profile-links"
+              src="../images/about/linkedin-white.png"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+    <script href="../javascript/core.js"></script>
   </body>
 </html>
