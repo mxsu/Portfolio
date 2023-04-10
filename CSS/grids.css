@@ -264,3 +264,17 @@ p.float-right {
     margin-left: -2.5rem;
   }
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  flex: 1;
+}
