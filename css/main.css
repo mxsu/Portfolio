@@ -92,28 +92,6 @@ a {
   text-decoration: none;
 }
 
-a:link {
-  color: var(--color-dark);
-}
-
-a:link:hover,
-a:link:visited {
-  color: var(--color-primary);
-}
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-    padding: 1rem;
-    padding-top: 1.5rem;
-  }
-  .montserrat {
-    font-size: 1em;
-  }
-  .p-container {
-    font-size: 1em;
-  }
-}
 /* Bulleted Lists 
     https://web.dev/css-marker-pseudo-element/
     dl: description list
@@ -170,20 +148,26 @@ div.numbered-list div:before {
 }
 
 .footer-right .button {
-  margin-top: 2rem;
+  margin-top: 3rem;
   position: relative;
-  top: -1.5rem;
+  top: -1.7rem;
   margin-bottom: -1rem;
+  background-color: var(--color-secondary);
+  transition: ease-in-out 0.4s;
 }
 .footer-right img {
   padding-top: 2rem;
+}
+
+.footer-right .button:hover {
+  background-color: var(--color-primary);
+  transition: ease-in-out 0.4s;
 }
 
 .button:hover,
 .button:focus {
   transition: ease-in-out 0.4s;
   background-color: var(--color-secondary);
-  color: var(--color-light);
 }
 
 /* Text Input */
@@ -232,14 +216,16 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border
   text-decoration: none;
   font-size: 18px;
   border-bottom: 4px solid transparent;
+  transition: background-color 0.5s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .topnav a:hover {
   background-color: var(--color-secondary);
-  color: black;
+  color: var(--color-light);
   border-bottom: 4px solid var(--color-primary);
-  transition: background-color 0.5s ease;
-  transition: border-bottom 0.5s ease;
+  transition: background-color 0.5s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .topnav a.active {
@@ -302,10 +288,9 @@ https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
 
 .dropdown:hover .dropbtn {
   background-color: var(--color-secondary);
-  color: var(--color-dark);
   border-bottom: 4px solid var(--color-primary);
   transition: background-color 0.5s ease;
-  transition: border-bottom 0.1s ease;
+  transition: border-bottom 0.2s ease-in-out;
 }
 
 .dropdown-content {
@@ -329,6 +314,7 @@ https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
 
 .dropdown-content a:hover {
   background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .dropdown:hover .dropdown-content {
@@ -493,7 +479,9 @@ footer {
   padding: 2rem;
   padding-top: 0.2rem;
   margin: 1rem;
-  width: 40%;
+  width: max-content;
+  flex: 1;
+  min-width: 250px;
 }
 
 .gallery-image {
@@ -544,4 +532,44 @@ footer {
 
 .msu {
   width: 300px;
+  border-radius: 1rem;
+}
+
+.border {
+  border: solid black 1px;
+}
+
+a.footer {
+  padding-top: 0.3rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: -2.3rem;
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-secondary);
+  position: relative;
+  transition: ease-in-out 0.4s;
+}
+a.footer:hover {
+  background-color: var(--color-primary);
+  transition: ease-in-out 0.4s;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    padding: 1rem;
+    padding-top: 1.5rem;
+  }
+  .montserrat {
+    font-size: 1em;
+  }
+  .p-container {
+    font-size: 1em;
+  }
+  .msu {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
 }

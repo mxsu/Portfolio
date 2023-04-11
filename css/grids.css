@@ -17,14 +17,17 @@
     font-size: 0.85em;
   }
   .project-layout {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .gallery-desc {
     padding: 0.5rem;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     width: fit-content;
+    min-width: none;
   }
   .gallery-desc p {
     padding: 0.5rem;
@@ -279,16 +282,24 @@ p.float-right {
   }
 }
 
+/* FOOTER FLEX */
+
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-left {
   flex: 1;
+  margin-bottom: 1rem;
 }
 
 .footer-right {
-  flex: 1;
+  flex: 3;
+  min-width: 200px;
+}
+
+.footer-left h2 {
 }
