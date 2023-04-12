@@ -1,3 +1,4 @@
+/* breakpoint for big screens */
 @media screen and (max-width: 1600px) {
   .project-layout {
     margin-left: 10%;
@@ -11,7 +12,7 @@
     margin-right: 10%;
   }
 } */
-
+/* Mobile breakpoint */
 @media only screen and (max-width: 768px) {
   body {
     font-size: 0.85em;
@@ -54,27 +55,6 @@
   flex-wrap: wrap;
 }
 
-/* .split-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.split-child {
-  flex-grow: 1;
-} */
-
-/* .flex-pcontainers {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flex-pitems {
-  flex-grow: 1;
-  flex-basis: auto;
-} */
-
 /* Project info section */
 
 .project-info {
@@ -100,7 +80,7 @@
   }
 }
 
-/* change section */
+/* change section color */
 /* .project-highlight {
   margin-left: -33.3%;
   margin-right: -33%;
