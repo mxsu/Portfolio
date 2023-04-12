@@ -86,7 +86,13 @@ body {
 .p-container {
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 68.25%;
 }
+
+.lessons {
+  width: 100%;
+}
+
 /* a tag */
 a {
   text-decoration: none;
