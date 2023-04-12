@@ -258,17 +258,18 @@ p.float-right {
   padding-left: 1rem;
   justify-content: space-around;
   padding-bottom: 2rem;
-  margin-right: 1rem;
 }
 
 .about-me-bio {
   flex: 1;
-  padding-right: 2rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
 }
 
 .about-me-text {
   min-width: 333px;
   flex: 2;
+  margin-right: -5rem;
 }
 
 .about-me-text .p-container {
