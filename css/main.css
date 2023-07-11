@@ -107,6 +107,7 @@ a {
     */
 dt {
   font-weight: 700;
+  margin-left: 1rem;
 }
 
 dd {
@@ -403,15 +404,15 @@ footer {
 }
 
 .figure {
-  border: 0.8rem solid var(--color-secondary);
-  border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
+  border: 0.4rem solid var(--color-secondary);
+  border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
 }
 /* smaller border for mobile devices */
 @media screen and (max-width: 1080px) {
   .figure {
-    border: 0.4rem solid var(--color-secondary);
+    border: 0.2rem solid var(--color-secondary);
   }
 }
 
