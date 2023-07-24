@@ -35,11 +35,11 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="../html/project-1.html">Playland Microsite</a>
+              <a href="../html/project-1.html">Playland Microsite Design</a>
               <a href="../html/project-2.html">JotDown Android App</a>
-              <a href="../html/project-3.html">Playland Microsite</a>
-              <a href="../html/project-4.html">JotDown Android App</a>
-              <a href="../html/project-5.html">Playland Microsite</a>
+              <a href="../html/project-3.html">ThePond Web Development</a>
+              <a href="../html/project-4.html">Rehabilition Arduino</a>
+              <a href="../html/project-5.html">Recital Hall 3D Modelling</a>
 
               <a href="../html/home.html#home-projects">View all projects</a>
             </div>
@@ -57,10 +57,7 @@
     </section>
     <!-- End of nav bar -->
     <div class="banner">
-      <h1 class="title">
-        Microsite Web Design:<br />
-        Playland
-      </h1>
+      <h1 class="title">Rehabilitation Arduino</h1>
     </div>
     <img class="showcase" src="../images/playland/playland.webp" />
     <section class="project-layout">
@@ -72,34 +69,30 @@
         <div class="info-items info-overview">
           <h2>Overview</h2>
           <p class="p-container">
-            For this school project, our team designed a webpage for Playland
-            targeted towards parents of kids and their common worries during a
-            family trip at an amusement park.
+            We created an educational device designed for fine motor skills
+            rehabilitaion for the elderly.
           </p>
         </div>
         <div class="info-items info-team">
           <h2>Team</h2>
-          <p class="p-container">
-            Alan Lam, Alan Huang, Michael Su, Sapol Pittayakornpisuth
-          </p>
+          <p class="p-container">JY Lee, Michael Su, Grace Tan, Russell Yuen</p>
         </div>
         <div class="info-items info-role">
           <h2>My Role</h2>
           <p class="p-container">
-            I was the project coordinator that handled duties such as
-            scheduling, organizing roles, and utilization of collaboration
-            tools.
+            I was the main Arduino programmer and engineer responsible for
+            sensor inputs and wiring.
           </p>
         </div>
         <div class="info-items info-skills">
           <h2>Skills</h2>
           <p class="p-container">
-            Sketching, Wireframing, User Persona/UI/UX, Mood boards, html/CSS
+            Sketching, Prototyping, Cable management, Physical model building
           </p>
         </div>
         <div class="info-items info-tools">
           <h2>Tools</h2>
-          <p class="p-container">Figma, Webflow, Visual Studio Code</p>
+          <p class="p-container">Figma, Arduino, Processing</p>
         </div>
       </div>
     </section>
@@ -112,11 +105,16 @@
         <div class="process-flex">
           <h2>Objectives</h2>
           <p class="p-container">
-            Design a microsite targeted towards parents planning to take their
-            kids on a summer trip to Playland. Their main pain points and
-            concerns are unknown dangers of the amusement park, getting
-            lost/losing their kids, ride information and safety, spending
-            budget, and weather concerns.
+            <dt>
+              Using Arduino we were tasked to create a project from one of these
+              streams
+            </dt>
+            <dd>Smart Device for the home</dd>
+            <dd>Green / sustainable Design</dd>
+            <dd>Educational Toy for children / rehabilitation</dd>
+            <dd>Interactive Sculpture</dd>
+            <dd>Health Monitoring</dd>
+            <br />
           </p>
         </div>
       </div>
@@ -125,10 +123,10 @@
       <div class="process-flex">
         <h2>Solution</h2>
         <p class="p-container">
-          Parental needs and concerns are addressed by the one-stop-shop
-          information provided on our microsite, which is aided by simplistic
-          yet visually appealing design. Content is arranged by order of
-          importance and icons are used to create visual support.
+          Our solution was to create a device that the elderly could use at home
+          without assistance of a trained professional. We designed a device
+          using Arduino sensors for user input, and then a user interface
+          designed in Processing to provide feedback and record daily progress.
         </p>
       </div>
 
@@ -137,97 +135,97 @@
       </div>
 
       <div class="process-flex">
-        <h2>Creating a User Persona</h2>
+        <h2>Ideation</h2>
         <p class="p-container">
-          We created a user persona to target a user group and address their
-          main worries, in our case it was a parent planning to bring their kids
-          on a summer trip to Playland.
+          The process of getting to this idea was during a brainstorming session
+          where one of the members mentioned their mother suffered from
+          arthritis. After looking at various devices that help with fine motor
+          skills on YouTube, we decided to combine these devices as their
+          purpose of improving the patients functions were similar.
         </p>
         <img class="figure" src="../images/playland/user-persona.png" />
       </div>
 
       <div class="process-flex">
-        <h2>Moodboards</h2>
+        <h2>Sketching</h2>
         <p class="p-container">
-          We created mood boards to find an art direction for our website, as
-          our group were split between two different styles: a more Gradient &
-          Dreamy approach where it was more colorful, softer geometric shapes
-          paired with sharp shapes to break motion, and a more fluid design to
-          provide users a sense of excitement and motion in an amusement park.
-        </p>
-
-        <img
-          class="figure under-text"
-          src="../images/playland/pastel-moodboard.png"
-        />
-        <p class="p-container float-right">
-          The other direction was a Simplistic & Modern style where we had flat
-          colors, sharp geometric shapes, big icons, and clear grid designs.
-          Which helped provide our target user with ease of navigation to easily
-          find information to plan trips.
+          After evaluating the most common fine motor skill exercises we decides
+          on three mechanisms: a pin drop to test user finger accuracy, a
+          squeeze ball for grip strength, and twisting a knob to judge wrist
+          flexibility.
         </p>
 
         <img class="figure" src="../images/playland/simple-moodboard.png" />
       </div>
       <div class="process-flex">
-        <h2>Ideation: Sketching Layouts</h2>
+        <h2>Interaction Diagrams</h2>
         <p class="p-container">
-          As a team, we each sketched out our ideas for for the website layout
-          before deciding on elements for our website.
+          We created diagrams based on how the user would interact with our
+          device and the computer, and how it would record their daily exercise.
         </p>
         <img class="figure" src="../images/playland/sketches.png" />
       </div>
 
       <div class="process-flex">
-        <h2>Wireframing</h2>
+        <h2>Prototyping</h2>
         <p class="p-container">
-          Our desktop wireframes were created based on a 6-grid layout and had
-          the necessary information condensed into one page.
-          <br /><br />
-          A problem we faced was that the mobile design was a lot harder to
-          layout as it was not as wide as a webpage. It created a design where
-          it was tightly packed together without much negative space in between
-          causing users to feel anxious.
+          I created diagrams and coded the sensors to test the wiring and
+          program before implementing the Arduino and breadboard into the
+          prototype.
         </p>
         <img class="figure" src="../images/playland/wireframe-web.png" />
+        <img class="figure" src="../images/playland/wireframe-mobile.png" />
         <img class="figure" src="../images/playland/wireframe-mobile.png" />
       </div>
 
       <div class="process-flex">
-        <h2>Testing + Iteration</h2>
+        <h2>Final Model Progress</h2>
         <p class="p-container">
-          After testing and feedback from our classmates and TA, we found out a
-          problem with both our website and mobile design were too condensed,
-          without a lot of negative space. Our redesign took that feedback and
-          implemented a website with more negative space, asymmetrical balance,
-          and use of icons, graphics and textures to balance out the negatives
-          and guide viewers eyes towards the next section.
+          After consideration from the TA and classmates, we realized we had too
+          many unnecessary designs in our implementation. For our revision we
+          decided to simplify it from a 3 sided design into a 1 sided design.
+          Our problem was that we had too many knobs, pins, and separate LED
+          strips in our design. We simplified it to use 1 LED strip for all 3
+          functions and have a single rotary encoder with different sized knobs.
+          <br />Some other improvements we made to our iterations was the use of
+          coloured foamboard to aid the use of visual feedback, copper tape
+          instead of aluminum foil for durability, sound effects for auditory
+          feedback
         </p>
         <div class="side-by-side">
           <img class="figure" src="../images/playland/playland-layout.png" />
           <img class="figure" src="../images/playland/playland-layout2.png" />
         </div>
       </div>
+
+      <div class="process-flex">
+        <h2>Final Coding Progress</h2>
+        <p class="p-container">
+          We also implemented a Processing user interface that could give visual
+          cues on the amount of progress in an exercise and track daily
+          progress.
+        </p>
+        <img class="figure" src="../images/playland/playland-layout.png" />
+      </div>
     </section>
     <div class="process-flex color-light lessons">
       <section class="project-layout">
         <h2>Lessons Learnt</h2>
         <p class="p-container">
-          After using Webflow to create our website and mobile designs, we ran
-          into a lot of problems with the application.
-
-          <br /><br />
-          The biggest problem is that only one person can edit at a time, and
-          that really brought down the productivity of the team as one person
-          held a lot of the burden. We solved this problem by sharing the
-          account and fixing things on our own time, but the website was not as
-          flushed out as we had hoped because of time constraints and the
-          learning curve of the software.
-          <br /><br />
-          Another problem was that changing something on the mobile side also
-          changed the webpage side. This was a huge problem because we wanted to
-          have floating and resizable icons on the webpage, but the grid layout
-          of the icons are in different positions on the mobile page.
+          I learned a lot from this project since it was both a digital and
+          physical project, I think one of the biggest problems I had was that
+          it was very annoying working with three different sensors at the same
+          time on Arduino and then sending the client data into the Processing
+          server. Initially we had different roles and I did Arduino coding,
+          while my group member Grace did Processing code, we were really good
+          at communicating with each other, but as we had to do more debugging,
+          more problems rose up. Another big problem I had was with wiring
+          because everything was behind a cramped tight box. What I would do
+          different is maybe consider doing one sensor at a time and then
+          implementing it into Processing instead of doing all three sensors at
+          once. Another thing I would do differently is have longer wire
+          connection so I could do the wiring outside without disconnecting some
+          interior wiring.
         </p>
       </section>
     </div>

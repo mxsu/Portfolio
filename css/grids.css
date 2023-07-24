@@ -113,14 +113,12 @@
 }
 
 /* Skills and toolkit */
-.info-skills {
-  flex: 50%;
+.info-tools {
   padding-right: 10%;
 }
 
-.info-tools {
+.info-skills {
   float: right;
-  flex: 50%;
 }
 
 /* Heading and Paragraph flex*/
