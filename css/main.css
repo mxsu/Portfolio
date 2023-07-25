@@ -498,8 +498,12 @@ footer {
   padding-top: 0.2rem;
   margin: 1rem;
   width: max-content;
-  flex: 1;
+  flex: 25%;
   min-width: 250px;
+}
+
+.blank {
+  background-color: var(--color-primary);
 }
 
 .gallery-image {
@@ -581,5 +585,10 @@ a.footer:hover {
   }
   dl {
     margin-left: 1rem;
+  }
+  .info-skills,
+  .info-timeline,
+  .info-team {
+    padding-left: 0rem;
   }
 }
